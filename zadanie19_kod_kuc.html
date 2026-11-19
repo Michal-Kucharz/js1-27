@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl-PL"> 
+     <head> 
+      <meta charset="UTF-8">
+            <title>zadanie 19 kod</title> 
+</head>  
+<body>
+      
+<textarea cols="90" rows="35">
+	//Michał Kucharz 3F 19.11.2026
+	//Zadanie 19
+      <!DOCTYPE html>
+<html lang="pl-PL">
+ <head> 
+  <meta charset="UTF-8">
+ <title>zadanie 19</title> 
+ </head> 
+<body> 
+ <script type="text/javascript"> 
+  function pole_kuc(){
+ var a_kuc= parseFloat(document.getElementById('dlugosc').value); 
+ var b_kuc= a_kuc*a_kuc; 
+ document.getElementById("nazwa").innerHTML ="Pole kwadratu= "+b_kuc.toFixed(2)+" cm^2";} 
+  function obwod_kuc(){ 
+ var a_kuc= parseFloat(document.getElementById('dlugosc').value); 
+ var b_kuc= 4*a_kuc; 
+        document.getElementById("nazwa").innerHTML ="Obwód kwadratu= "+b_kuc.toFixed(2)+" cm";} 
+ </script> 
+  <h1>Wszystko o KWADRACIE</h1><br><br> 
+  Podaj długość boku: <input type="text" id="dlugosc" placeholder="podaj długość"> cm<br><br><br> 
+  <input type="button" name="pole" value="Oblicz pole" Onclick="pole_kuc()"><br><br> 
+  <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod_kuc()"><br><br> 
+  <div style="color:red;font-size:50px;" id="nazwa"></div>
+<br><form> 
+<input type="button" value="zamknij okno" onclick="window.close()"></form>
+</body> 
+</html>
+<!-- Michał Kucharz 3F -->
+</textarea>
+<form> 
+<input type="button" value="zamknij okno" onclick="window.close()"></form> 
+</body> 
+</html> 

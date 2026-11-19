@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl-PL"> 
+     <head> 
+      <meta charset="UTF-8">
+            <title>zadanie 20 kod</title> 
+</head>  
+<body>
+      
+<textarea cols="140" rows="45">
+	//Michał Kucharz 3F 19.11.2026
+	//Zadanie 20
+<!DOCTYPE html>
+<html lang="pl-PL">
+ <head> 
+  <meta charset="UTF-8">
+ <title>zadanie 20</title> 
+ </head> 
+<body> 
+ <script type="text/javascript"> 
+ function AB_kuc(){
+var xa_kuc= parseFloat(document.getElementById('xa').value); 
+var ya_kuc= parseFloat(document.getElementById('ya').value);
+var xb_kuc= parseFloat(document.getElementById('xb').value); 
+var yb_kuc= parseFloat(document.getElementById('yb').value);
+document.getElementById("nazwa").innerHTML ="Długość boku [AB] = "+Math.sqrt(Math.pow(xa_kuc-xb_kuc,2)+Math.pow(ya_kuc-yb_kuc,2)).toFixed(2)+" cm";}
+ function BC_kuc(){
+var xc_kuc= parseFloat(document.getElementById('xc').value); 
+var yc_kuc= parseFloat(document.getElementById('yc').value);
+var xb_kuc= parseFloat(document.getElementById('xb').value); 
+var yb_kuc= parseFloat(document.getElementById('yb').value);
+document.getElementById("nazwa").innerHTML ="Długość boku [BC] = "+Math.sqrt(Math.pow(xb_kuc-xc_kuc,2)+Math.pow(yb_kuc-yc_kuc,2)).toFixed(2)+" cm";}
+ function AC_kuc(){
+var xa_kuc= parseFloat(document.getElementById('xa').value); 
+var ya_kuc= parseFloat(document.getElementById('ya').value);
+var xc_kuc= parseFloat(document.getElementById('xc').value); 
+var yc_kuc= parseFloat(document.getElementById('yc').value);
+document.getElementById("nazwa").innerHTML ="Długość boku [AC] = "+Math.sqrt(Math.pow(xa_kuc-xc_kuc,2)+Math.pow(ya_kuc-yc_kuc,2)).toFixed(2)+" cm";}
+ </script> 
+  <h1>Długości trójkąta</h1><br><br> 
+  A(<input type="text" id="xa" placeholder="podaj x punktu a"> , <input type="text" id="ya" placeholder="podaj y punktu a">)<br><br>
+  B(<input type="text" id="xb" placeholder="podaj x punktu b"> , <input type="text" id="yb" placeholder="podaj y punktu b">)<br><br>
+  C(<input type="text" id="xc" placeholder="podaj x punktu c"> , <input type="text" id="yc" placeholder="podaj y punktu c">)<br><br>
+  <input type="button" name="bok_ab" value="Oblicz bok AB" Onclick="AB_kuc()"><br><br>
+  <input type="button" name="bok_bc" value="Oblicz bok BC" Onclick="BC_kuc()"><br><br> 
+  <input type="button" name="bok_ac" value="Oblicz bok AC" Onclick="AC_kuc()"><br><br> 
+  <div style="color:red;font-size:50px;" id="nazwa"></div>
+<br><form> 
+<input type="button" value="zamknij okno" onclick="window.close()"></form>
+</body> 
+</html>
+<!-- Michał Kucharz 3F --></textarea>
+<form> 
+<input type="button" value="zamknij okno" onclick="window.close()"></form> 
+</body> 
+</html> 

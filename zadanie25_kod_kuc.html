@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl-PL"> 
+     <head> 
+      <meta charset="UTF-8">
+            <title>zadanie 25 kod</title> 
+</head>  
+<body>
+      
+<textarea cols="90" rows="32">
+	//Michał Kucharz 3F 19.11.2026
+	//Zadanie 25
+<!DOCTYPE html>
+<html lang="pl-PL"> 
+     <head> 
+      <meta charset="UTF-8">
+            <title>zadanie 25</title> 
+</head>  
+<body> 
+<div style="color:blue;font-size:33px;"> 
+<script type="text/javascript"> 
+var n0_kuc=prompt("N0=","");
+var T_kuc=prompt("T=","");
+var T12_kuc=prompt("T1/2=","");
+var n0=parseFloat(n0_kuc); 
+var t=parseFloat(T_kuc);
+var t12=parseFloat(T12_kuc);
+document.write("Wczytane liczby: <br>N0 = "+n0.toFixed(2)+" [sztuk]<br>t = "+t.toFixed(2)+" [lat]<br>T1/2 = "+t12.toFixed(2)+" [lat]<br><br>");
+var l=Math.log(2)/t12;
+var N=n0*Math.pow(Math.E,-l*t);
+document.write("lambda = "+l.toFixed(7)+" [1/rok]<br>");
+document.write("N = "+N.toFixed(7)+" [sztuk]<br>");
+</script> 
+</div><form> 
+<input type="button" value="zamknij okno" onclick="window.close()"></form> 
+</body> 
+</html>
+<!-- Michał Kucharz 3F -->
+</textarea>
+<form> 
+<input type="button" value="zamknij okno" onclick="window.close()"></form> 
+</body> 
+</html> 
